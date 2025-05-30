@@ -3,6 +3,7 @@ import HOUSE_IMAGE from "@/public/assets/images/house.png";
 import STAR_IMAGE from "@/public/assets/images/star.png";
 import React from "react";
 import Pill from "./Pill";
+import Button from "./Button";
 
 const Card: React.FC = () => {
   return (
@@ -33,7 +34,6 @@ const Card: React.FC = () => {
           <p className=" font-medium text-[17px] ml-2">4.76</p>
         </div>
       </div>
-
       <div className="flex justify-between mt-4">
         <div className=" grid grid-cols-3 border w-[156px] rounded-full px-2 py-1">
           <div className="flex items-center">
@@ -108,6 +108,18 @@ const Card: React.FC = () => {
           $2,450<span className=" text-[14px] text-[#787878]">/n</span>
         </p>
       </div>
+      <Button
+        title="Book now"
+        styles="bg-blue-200 sm:rounded-sm sm:bg-green-500"
+      />
+      <Button
+        title="Sell now"
+        styles="bg-yellow-200 md:rounded-md md:bg-red-500"
+      />
+      <Button
+        title="Explore"
+        styles="bg-white-500 lg:rounded-full lg:bg-purple-500"
+      />
     </div>
   );
 };
